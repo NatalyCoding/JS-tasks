@@ -41,5 +41,19 @@ let sum = [item1, item2, item3].reduce((a, b) => a + b, 0);
 let middleNumber = sum / [item1, item2, item3].length;
 console.log(middleNumber.toFixed(2));
 
-/* (Більш складне) Створіть змінну, в якої збережіть випадкову знижку
-(використовуйте функцію Math.random).*/
+/* (Більш складне) Створіть змінну, в яку збережіть випадкову знижку
+(використовуйте функцію Math.random).
+Зробіть клієнту випадкову знижку та виведіть суму до оплати,
+округлену до 2 знаків після коми.
+Виведіть чистий прибуток, якщо клієнт заплатив зі знижкою 
+та собівартість товарів рівно в два рази нижче їх ціни*/
+let price = 260;
+
+let discount = Math.random().toFixed(2);
+console.log(discount);
+
+let totalToPay = price - (price * (discount / 100));
+console.log(totalToPay.toFixed(2));
+let earnings = (totalToPay - price / 2).toFixed(2);
+
+console.log(earnings);
