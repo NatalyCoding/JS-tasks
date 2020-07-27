@@ -1,6 +1,8 @@
 /* Створити функцію getMaxDigit(number) – яка отримує будь-яке число та виводить найбільшу цифру в цьому числі. Приклади: 1236 -> 6, 987 -> 9, 385 -> 8 */
-function getMaxDigit(number) {
-    return ...number.toString
+/* function getMaxDigit(number) {
+   number.toString();
+   iterate through string for
+   create let max to add 
 }
 
 /* Створити функцію, яка визначає ступінь числа. Не використовуючи Math.pow та **. Використовуйте цикл
